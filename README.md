@@ -45,7 +45,7 @@ The name **VCO_Gerber** is taken from original **.zip** file.
 
 # Usage
 ```
-$ orcad_for_pcbway.sh ./vco/VCO_Gerber.zip 
+$ ./orcad_for_pcbway.sh ./vco/VCO_Gerber.zip 
 Project name: VCO_Gerber
 /tmp/rename_layers_tmp ~/workspace/gerber_pcbway
 Archive:  input.zip
