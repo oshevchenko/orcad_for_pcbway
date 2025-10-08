@@ -5,41 +5,24 @@ PCBWAY requres the following extensions for Gerber files: https://www.pcbway.com
 
 The content of the file **VCO_Gerber.zip** created by OrCAD:
 ```
-
 TOP.art <- copper top
 SSTP.art <- silkscreen top 
 SSBT.art <- silkscreen bottom
-SPTP.art                                                                
-SPBT.art                                                                
-SMTP.art                                                                
-SMBT.art                                                                
-NCLEGEND-1-2.art                                                        
-nc_param.txt                                                            
 BOTTOM.art <- copper bottom
-ASSYTP.art                                                              
-ASSYBT.art                                                              
-art_param.txt                                                           
-vco_collpits-1-2.drl <- drill file etc...
-OUTLINE.art     
+OUTLINE.art <- outline
+vco_collpits-1-2.drl <- drill file
+etc...
 ```
 The script renames them to:
-
 ```
-VCO_Gerber.GTL                                                          
-VCO_Gerber.GBL                                                          
-VCO_Gerber.GTS                                                          
-VCO_Gerber.GBS                                                          
-VCO_Gerber.GTO                                                          
-VCO_Gerber.GBO                                                          
-VCO_Gerber.GTP                                                          
-VCO_Gerber.GBP                                                          
-VCO_Gerber.GKO                                                          
-VCO_Gerber_ASSYBT.art                                                   
-VCO_Gerber_ASSYTP.art                                                   
-VCO_Gerber_NCLEGEND-1-2.art                                             
-VCO_Gerber_art_param.txt                                                
-VCO_Gerber_nc_param.txt                                                 
-VCO_Gerber_vco_collpits-1-2.DRD  
+TOP.art >>> VCO_Gerber.GTL                                                          
+BOTTOM.art >>> VCO_Gerber.GBL                                                          
+SMTP.art >>> VCO_Gerber.GTS                                                          
+SMBT.art >>> VCO_Gerber.GBS                                                          
+SSTP.art >>> VCO_Gerber.GTO                                                          
+SSBT.art >>> VCO_Gerber.GBO
+OUTLINE.art >>> VCO_Gerber.GKO
+etc...
 ```
 The name **VCO_Gerber** is taken from original **.zip** file.
 
